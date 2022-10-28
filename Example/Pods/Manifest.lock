@@ -1,0 +1,16 @@
+PODS:
+  - MyReader (0.1.0)
+
+DEPENDENCIES:
+  - MyReader (from `../`)
+
+EXTERNAL SOURCES:
+  MyReader:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MyReader: b4ca6abf123afa62e6c522a7c23efc27cce7bd2d
+
+PODFILE CHECKSUM: 8d4935ba5927e7325b5f5b4a8f49d010ab051511
+
+COCOAPODS: 1.11.3

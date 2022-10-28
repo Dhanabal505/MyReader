@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'MyReader'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of MyReader.'
+  s.summary          = 'MyReader for test the passport.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,37 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  'MyReader for test the passport.'
                        DESC
 
   s.homepage         = 'https://github.com/Dhanabal505/MyReader'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Dhanabal505' => 'vignesh@nissisoftwaresystems.com' }
+  s.author           = { 'Dhanabal505' => 'psdhanabal505@gmail.com' }
   s.source           = { :git => 'https://github.com/Dhanabal505/MyReader.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '12.0'
 
-  s.source_files = 'MyReader/Classes/**/*'
+  s.source_files = 'Source/**/*.swift'
+  s.swift_version = '5.0'
+  s.platforms = {
+      "ios": "12.0"
+  }
+  
   
   # s.resource_bundles = {
-  #   'MyReader' => ['MyReader/Assets/*.png']
+  #   'ReadPass' => ['ReadPass/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  
+  s.dependency 'QKMRZScanner'
+  s.dependency 'QKMRZParser'
+  s.dependency 'Alamofire', '~> 4.9'
+  s.dependency 'NFCPassportReader'
+  s.dependency 'Toast-Swift', '~> 5.0.0'
+  
 end

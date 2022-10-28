@@ -1,0 +1,22 @@
+{
+  "name": "MyReader",
+  "version": "0.1.0",
+  "summary": "A short description of MyReader.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Dhanabal505/MyReader",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Dhanabal505": "vignesh@nissisoftwaresystems.com"
+  },
+  "source": {
+    "git": "https://github.com/Dhanabal505/MyReader.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "MyReader/Classes/**/*"
+}
